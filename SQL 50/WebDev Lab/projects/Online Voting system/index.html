@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Voting System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            width: 400px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #444;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 18px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .candidates {
+            margin-bottom: 20px;
+        }
+
+        .candidates label {
+            font-weight: normal;
+            display: block;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #667eea;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #5a67d8;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 13px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Online Voting System</h2>
+
+    <label>Voter ID</label>
+    <input type="text" placeholder="Enter your Voter ID">
+
+    <label>Select Candidate</label>
+    <div class="candidates">
+        <label><input type="radio" name="vote"> Candidate A</label>
+        <label><input type="radio" name="vote"> Candidate B</label>
+        <label><input type="radio" name="vote"> Candidate C</label>
+    </div>
+
+    <button>Submit Vote</button>
+
+    <div class="footer">
+        Secure & Transparent Voting
+    </div>
+</div>
+
+</body>
+</html>

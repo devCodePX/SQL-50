@@ -1,0 +1,12 @@
+body{font-family:Arial;
+    text-align:center}
+nav{background:#333;
+    padding:10px}
+nav a{color:#fff;
+    margin:10px;
+    text-decoration:none;
+    padding:6px 10px}
+nav a:hover{background:#db6969;
+    border-radius:4px}
+#result{margin-top:20px;
+    font-size:20px}

@@ -1,0 +1,74 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper{
+ 
+    height: 100vh;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+      
+
+}
+
+#fContainer{
+
+    height: 100%;
+    width: 100%;;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+ 
+    
+    
+}
+
+#mo{
+
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-55px) scale(6.8);
+
+}
+
+#man{
+
+    transform: translateZ(-35px) scale(6.5);
+    height: 500px;
+    right: 0px;
+
+    
+}
+
+#mo,#man{
+
+  position: absolute;
+  z-index: -1;
+
+  /* object-fit: cover; */
+
+
+  
+}
+
+#advanture{
+
+    position: relative;
+    transform: translateZ(-10px) scale(2);
+    /* top: 0px; */
+    align-self: flex-start;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 70px;
+    text-shadow: 5px 0 10px black;
+}
+
+
+

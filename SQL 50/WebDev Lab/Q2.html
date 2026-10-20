@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+
+<h2>User Form</h2>
+
+<form onsubmit="return validateForm()">
+    
+    Name:<br>
+    <input type="text" id="name"><br>
+    <span id="nameError" ></span><br>
+
+    Email:<br>
+    <input type="text" id="email"><br>
+    <span id="emailError" ></span><br>
+
+    Password:<br>
+    <input type="password" id="password"><br>
+    <span id="passError" ></span><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+function validateForm() {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    let valid = true;
+
+
+    document.getElementById("nameError").innerHTML = "";
+    document.getElementById("emailError").innerHTML = "";
+    document.getElementById("passError").innerHTML = "";
+
+
+    if (name === "") {
+        document.getElementById("nameError").innerHTML = "Name required";
+        valid = false;
+    }
+
+
+    if (email === "") {
+        document.getElementById("emailError").innerHTML = "Email required";
+        valid = false;
+    } 
+    else if (!email.includes("@")) {
+        document.getElementById("emailError").innerHTML = "Invalid email";
+        valid = false;
+    }
+
+
+    if (password === "") {
+        document.getElementById("passError").innerHTML = "Password required";
+        valid = false;
+    }
+
+    return valid;
+}
+</script>
+
+</body>
+</html>
